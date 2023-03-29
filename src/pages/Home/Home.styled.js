@@ -7,9 +7,17 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h3`
   font-weight: 500;
-  font-size: 48px;
   text-align: center;
-  color: rgb(39 34 124);
+
+  font-style: italic;
+`;
+
+export const LoginTitle = styled.h3`
+  font-style: italic;
+`;
+
+export const ContactTitle = styled.h3`
+  font-style: italic;
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 16px;
 `;
@@ -41,8 +41,8 @@ export const WrapContent = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
 `;
 
 export const Title = styled.h1`
