@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-
-export const FormContainer = styled.form`
+import { Form, Field } from 'formik';
+export const FormContainer = styled(Form)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@ export const Title = styled.h2`
   font-style: italic;
 `;
 
-export const Input = styled.input`
+export const Input = styled(Field)`
   width: 100%;
   padding: 10px;
   margin: 10px 0;
