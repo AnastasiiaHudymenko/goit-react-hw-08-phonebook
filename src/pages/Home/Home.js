@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { LoginTitle, Title, ContactTitle } from './Home.styled';
 import phoneBook from '../../image/phoneBook.jpg';
 import contactImg from '../../image/contacts.jpg';

@@ -1,11 +1,14 @@
 import { Formik } from 'formik';
+import { useDispatch } from 'react-redux';
+import { register } from '../../redux/auth/operations';
 import { FormContainer, Input, Button, Title } from './Register.styled';
 
 export const RegisterPage = () => {
+  const dispatch = useDispatch();
+
   const handleSubmit = (value, action) => {
+    dispatch(register(value));
     action.resetForm();
-    console.log(value);
-    console.log(action);
   };
 
   return (
@@ -18,7 +21,7 @@ export const RegisterPage = () => {
       }}
     >
       <FormContainer>
-        <Title>Please register</Title>
+        <Title>register please</Title>
         <Input name="name" type="text" placeholder="Username" />
         <Input name="email" type="email" placeholder="Email" />
         <Input name="password" type="password" placeholder="Password" />
