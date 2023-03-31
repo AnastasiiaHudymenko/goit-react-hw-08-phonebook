@@ -1,6 +1,6 @@
 import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/operations';
+import { register } from '../redux/auth/operations';
 import {
   FormContainer,
   Input,
@@ -8,7 +8,7 @@ import {
   Title,
   Container,
   Bg,
-} from './Register.styled';
+} from './Register/Register.styled';
 
 export const RegisterPage = () => {
   const dispatch = useDispatch();

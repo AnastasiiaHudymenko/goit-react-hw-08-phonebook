@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { filterContact } from '../../redux/filter/slice';
-import { Input } from './Filter.styled';
+import { Input, Container } from './Filter.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ export const Filter = () => {
   };
 
   return (
-    <div>
+    <Container>
       <Input
         value={filter}
         onChange={handleChange}
@@ -19,6 +19,6 @@ export const Filter = () => {
         name="filter"
         type="text"
       />
-    </div>
+    </Container>
   );
 };

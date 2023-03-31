@@ -12,7 +12,7 @@ export const Bg = styled.div`
 export const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 50px 16px;
 `;
 
 export const LoginForm = styled(Form)`
@@ -23,7 +23,9 @@ export const LoginForm = styled(Form)`
   width: 400px;
   height: 300px;
   margin: 0 auto;
-  background-color: #fff;
+
+  background: #ffffff;
+  background: linear-gradient(to left, #ffffff, #27227c);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
@@ -47,6 +49,10 @@ export const Input = styled(Field)`
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  ::placeholder {
+    color: rgb(39, 34, 124);
+    font-style: italic;
+  }
   &:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);

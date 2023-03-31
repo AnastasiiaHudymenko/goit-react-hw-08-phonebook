@@ -1,7 +1,14 @@
 import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
-import { logIn } from '../../redux/auth/operations';
-import { LoginForm, Input, Button, Title, Container, Bg } from './Login.styled';
+import { logIn } from '../redux/auth/operations';
+import {
+  LoginForm,
+  Input,
+  Button,
+  Title,
+  Container,
+  Bg,
+} from './Login/Login.styled';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();

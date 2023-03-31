@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Form, Field } from 'formik';
 
 export const FormStyled = styled(Form)`
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -30,4 +31,17 @@ export const ButtonAdd = styled.button`
   border-radius: 100%;
   padding: 7px;
   box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+`;
+export const Errormsg = styled.div`
+  color: red;
+  position: absolute;
+  top: 65px;
+  left: 30px;
+`;
+
+export const ErrormsgLeft = styled.div`
+  color: red;
+  position: absolute;
+  top: 65px;
+  right: 200px;
 `;

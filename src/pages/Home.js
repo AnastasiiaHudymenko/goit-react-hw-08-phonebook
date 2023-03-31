@@ -1,8 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { LoginTitle, Title, ContactTitle, Container } from './Home.styled';
-import phoneBook from '../../image/phoneBook.jpg';
-import contactImg from '../../image/contacts.jpg';
-import loginImg from '../../image/login.jpg';
+import { LoginTitle, Title, ContactTitle, Container } from './Home/Home.styled';
+import phoneBook from '../image/phoneBook.jpg';
+import contactImg from '../image/contacts.jpg';
+import loginImg from '../image/login.jpg';
 
 export const HomePage = () => {
   return (
