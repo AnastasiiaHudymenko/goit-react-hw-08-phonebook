@@ -1,6 +1,8 @@
-import { Formik, Form, Field } from 'formik';
+import { Formik } from 'formik';
+import { TfiPlus } from 'react-icons/tfi';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
+import { FormStyled, Input, ButtonAdd } from './ContactForm.styled';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -12,11 +14,19 @@ export const ContactForm = () => {
 
   return (
     <Formik onSubmit={handleSubmit} initialValues={{ name: '', number: '' }}>
-      <Form>
-        <Field placeholder="Name Contact" name="name" />
-        <Field placeholder="Phone number" name="number" />
-        <button type="submit">Add contact</button>
-      </Form>
+      <FormStyled>
+        <Input placeholder="Name Contact" name="name" />
+
+        <Input placeholder="Phone number" name="number" />
+
+        <ButtonAdd type="submit">
+          <TfiPlus color="#fff" size={24} />
+        </ButtonAdd>
+      </FormStyled>
     </Formik>
   );
 };
+
+// FcPlus
+//FcOk
+//SlUserFollowing
